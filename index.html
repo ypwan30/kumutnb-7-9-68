@@ -12,8 +12,8 @@
     />
     <style>
       @font-face {
-        font-family: "Hela";
-        src: url("font/Hela.ttf") format("truetype");
+        font-family: "Maehongson";
+        src: url("font/Maehongson.ttf") format("truetype");
       }
 
       .header {
@@ -30,7 +30,6 @@
       }
 
       body {
-        font-family: "Hela", sans-serif;
         background-color: #e0e0e0;
       }
 
@@ -74,13 +73,8 @@
         color: #fff !important;
       }
 
-      footer {
-        font-family: "Hela", sans-serif;
-        background-color: #000000;
-      }
-
       * {
-        font-family: "Hela", sans-serif;
+        font-family: "Maehongson", sans-serif;
       }
       .dropdown-menu {
         position: absolute;
@@ -299,8 +293,23 @@
                 ข้อมูลเพิ่มเติม
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ปวช.</a></li>
-                <li><a class="dropdown-item" href="#">ปวส.</a></li>
+                <li>
+                  <a
+                    href="#"
+                    class="btn dropdown-item text-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#register"
+                  >
+                    สมัครสมาชิก
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">หน้าหลัก</a></li>
+                <li><a class="dropdown-item" href="#">ค้นหาบทความ</a></li>
+                <li><a class="dropdown-item" href="#">อัลบั้มรูปภาพ</a></li>
+                <li><a class="dropdown-item" href="#">เนื้อหาเพิ่มเติม</a></li>
+                <li><a class="dropdown-item" href="#">เพื่อนสมาชิก</a></li>
+
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
@@ -547,6 +556,248 @@
       aria-labelledby="profile-tab"
       tabindex="0"
     ></div>
+
+    <!-- สมัครสมาชิก -->
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Create Account
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container row g-3">
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput" class="form-label"
+                  >First name*</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="enter your first name"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                  placeholder="enter your last name"
+                />
+              </div>
+              <div class="mb-3 col-12">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Email*</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                  placeholder="enter your email"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="enter your password"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Confirm Password*</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                  placeholder="enter your password again"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Gender</label
+                ><br />
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioDefault"
+                    id="radioDefault1"
+                  />
+                  <label class="form-check-label" for="radioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioDefault"
+                    id="radioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="radioDefault2">
+                    Female
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Hobbies</label
+                ><br />
+
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkDefault"
+                  />
+                  <label class="form-check-label" for="checkDefault">
+                    Music
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="checkChecked">
+                    Sports
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="checkChecked">
+                    Travel
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="checkChecked">
+                    Movies
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Source of Income</label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Employed</option>
+                  <option value="1">Employed Jobs</option>
+                  <option value="2">Self-employed Jobs / Freelance Jobs</option>
+                  <option value="3">Business Owner / Entrepreneur</option>
+                  <option value="4">Professional Jobs</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="customRange4" class="form-label">Income</label>
+                <input
+                  type="range"
+                  class="form-range"
+                  min="0"
+                  max="35000"
+                  value="0"
+                  id="customRange4"
+                />
+                <output
+                  for="customRange4"
+                  id="rangeValue"
+                  aria-hidden="true"
+                ></output>
+
+                <script>
+                  // This is an example script, please modify as needed
+                  const rangeInput = document.getElementById("customRange4");
+                  const rangeOutput = document.getElementById("rangeValue");
+
+                  // Set initial value
+                  rangeOutput.textContent = rangeInput.value;
+
+                  rangeInput.addEventListener("input", function () {
+                    rangeOutput.textContent = this.value;
+                  });
+                </script>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Upload Profile Picture</label
+                >
+                <div class="mb-3">
+                  <input
+                    class="form-control form-control-sm"
+                    id="formFileSm"
+                    type="file"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Age</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="enter your Age"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Bio</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer class="bg-dark text-white pt-4 pb-3 mt-5">
